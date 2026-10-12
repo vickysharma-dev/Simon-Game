@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+.red{
+    background-color: rgba(231, 82, 82, 0.705);
+}
+.green{
+    background-color: rgba(66, 238, 66, 0.637);
+}
+.blue{
+    background-color: rgba(51, 116, 160, 0.932);
+}
+.yellow{
+    background-color: rgb(209, 133, 62);
+}
