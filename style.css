@@ -1,5 +1,7 @@
 body{
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .btn-container{
@@ -12,7 +14,7 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 20%;
-    border: 2px solid black;
+    border: 16px solid black;
     margin: 1rem;
 }
 
@@ -27,4 +29,12 @@ body{
 }
 .yellow{
     background-color: rgb(209, 133, 62);
+}
+
+.flash{
+    background-color: White;
+}
+
+.userflash{
+    background-color: green;
 }
