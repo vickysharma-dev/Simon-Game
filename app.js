@@ -63,7 +63,7 @@ function checkAns(idx) {
         document.body.style.backgroundColor = "red";
 
         setTimeout(function () {
-            document.body.style.backgroundColor = "black";
+            document.body.style.backgroundColor = "white";
         }, 200);
 
         reset();
