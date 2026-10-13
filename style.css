@@ -1,40 +1,94 @@
-body{
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
     text-align: center;
     background-color: rgb(0, 0, 0);
     color: white;
+    margin: 0;
+    padding: 20px 12px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.btn-container{
+h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin: 10px 0 16px;
+}
+
+h2 {
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+    margin: 12px 0 20px;
+}
+
+/* Game Layout */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.line1,
+.line2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn{
-    height: 200px;
-    width: 200px;
+/* Game Buttons */
+.btn {
+    width: clamp(110px, 25vw, 200px);
+    height: clamp(110px, 25vw, 200px);
     border-radius: 20%;
-    border: 16px solid black;
-    margin: 1rem;
+    border: clamp(7px, 1.5vw, 16px) solid black;
+    margin: clamp(6px, 1.5vw, 16px);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
 }
 
-.red{
+/* Button Colors */
+.red {
     background-color: rgba(231, 82, 82, 0.705);
 }
-.green{
+
+.green {
     background-color: rgba(66, 238, 66, 0.637);
 }
-.blue{
+
+.blue {
     background-color: rgba(51, 116, 160, 0.932);
 }
-.yellow{
+
+.yellow {
     background-color: rgb(209, 133, 62);
 }
 
-.flash{
-    background-color: White;
+/* Game Flash Effects */
+.flash {
+    background-color: white;
 }
 
-.userflash{
+.userflash {
     background-color: green;
+}
+
+/* Small Mobile Screens */
+@media (max-width: 380px) {
+    body {
+        padding: 12px 6px;
+    }
+
+    .btn {
+        width: min(38vw, 145px);
+        height: min(38vw, 145px);
+        margin: 6px;
+        border-width: 7px;
+    }
 }
